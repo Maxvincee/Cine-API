@@ -1,5 +1,3 @@
-'use strict';
-
 const Dotenv = require('dotenv');
 const Confidence = require('@hapipal/confidence');
 const Toys = require('@hapipal/toys');
@@ -32,9 +30,6 @@ module.exports = new Confidence.Store({
             {
                 plugin: '../lib', // Main plugin
                 options: {}
-            },
-            {
-                plugin: './plugins/swagger'
             },
             {
                 plugin: {

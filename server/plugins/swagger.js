@@ -3,7 +3,7 @@
 const Inert = require('@hapi/inert');
 const Vision = require('@hapi/vision');
 const HapiSwagger = require('hapi-swagger');
-const Package = require('../../package.json');
+const Pack = require('../../package.json');
 
 module.exports = {
     name: 'app-swagger',
@@ -16,7 +16,8 @@ module.exports = {
                 plugin: HapiSwagger,
                 options: {
                     info: {
-                        version: Package.version
+                        title: 'Api Documentation',
+                        version: Pack.version
                     }
                 }
             }

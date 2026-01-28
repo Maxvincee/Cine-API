@@ -1,2 +1,10 @@
+.idea/
+.idea/workspace.xml
+.idea/shelf/
+.idea/dictionaries/
+.idea/httpRequests/
+
+README.md
+
 node_modules
 server/.env

@@ -1,8 +1,8 @@
 {
-  "name": "iut-project",
+  "name": "cine-api",
   "version": "1.0.0",
-  "description": "",
-  "author": "",
+  "description": "API REST de gestion de films pour le module Développement Avancé",
+  "author": "Maxvincee",
   "license": "ISC",
   "main": "lib/index.js",
   "directories": {
@@ -11,20 +11,21 @@
   },
   "scripts": {
     "start": "node server",
+    "dev": "nodemon --exec node server",
     "test": "lab -a @hapi/code -I \"__core-js_shared__,CSS,regeneratorRuntime,core\" -L",
     "lint": "eslint ."
   },
   "dependencies": {
     "@hapi/boom": "9.x.x",
     "@hapipal/haute-couture": "4.x.x",
-    "joi": "17.x.x",
-    "objection": "2.x.x",
     "@hapipal/schwifty": "6.x.x",
-    "sqlite3": "5.0.2",
-    "exiting": "6.0.1"
+    "exiting": "6.0.1",
+    "joi": "17.x.x",
+    "objection": "^3.1.5",
+    "sqlite3": "^5.1.7"
   },
   "peerDependencies": {
-    "knex": "0.21.x"
+    "knex": "^3.1.0"
   },
   "devDependencies": {
     "@hapi/code": "8.x.x",
@@ -36,14 +37,15 @@
     "@hapi/inert": "6.x.x",
     "@hapi/lab": "23.x.x",
     "@hapi/vision": "6.x.x",
-    "babel-eslint": "10.x.x",
     "@hapipal/confidence": "6.x.x",
+    "@hapipal/hpal": "3.x.x",
+    "@hapipal/hpal-debug": "2.x.x",
+    "@hapipal/toys": "3.x.x",
+    "babel-eslint": "10.x.x",
     "dotenv": "8.x.x",
     "eslint": "7.x.x",
     "hapi-swagger": "14.x.x",
-    "@hapipal/hpal": "3.x.x",
-    "@hapipal/hpal-debug": "2.x.x",
-    "knex": "^0.21.16",
-    "@hapipal/toys": "3.x.x"
+    "knex": "^3.1.0",
+    "nodemon": "^3.1.11"
   }
 }

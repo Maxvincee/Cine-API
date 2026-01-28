@@ -20,7 +20,7 @@ module.exports = new Confidence.Store({
         debug: {
             $filter: { $env: 'NODE_ENV' },
             $default: {
-                log: ['error'],
+                log: ['error','start'],
                 request: ['error']
             },
             production: {
@@ -48,7 +48,7 @@ module.exports = new Confidence.Store({
                             client: 'sqlite3',
                             useNullAsDefault: true,
                             connection: {
-                                filename: ':memory:'
+                                filename: 'database/cine.sqlite'
                             },
                             migrations: {
                                 stub: Schwifty.migrationsStubPath
